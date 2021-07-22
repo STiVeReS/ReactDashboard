@@ -7,12 +7,12 @@ import {BrowserRouter as Router} from 'react-router-dom';
 import './App.scss';
 
 /*
-* components
+* Components
 * */
-import {Main} from "./screen/Main";
+import {Main} from "./screens/Main";
 
 
-import {StatBlock} from "./components/stat_block/StatBlock";
+import {StatBlock} from "./components/StatBlock/StatBlock";
 
 
 function App() {

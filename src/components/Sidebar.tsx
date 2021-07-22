@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {MenuItem} from "./menu/MenuItem";
+import {MenuItem} from "./Menu/MenuItem";
 
 export function Sidebar() {
     return (

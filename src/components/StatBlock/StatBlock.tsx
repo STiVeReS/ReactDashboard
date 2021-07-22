@@ -1,27 +1,28 @@
 import React from 'react';
 import {SingleItem} from "./SingleItem";
-import {statBlockData} from "../../api/stat_block/statBlockData";
-// console.log(statBlockData)
+import {STAT_BLOCK_DATA} from "../../api/statBlock/statBlockData";
 
 
 export function StatBlock() {
 
-    const renderItem = statBlockData.map((item, index) => {
+    const renderBlocks = STAT_BLOCK_DATA.map((item, index) => {
         return (
             <SingleItem
                 key={index}
-                title={item.title}
-                titleValue={item.titleValue}
+                label={item.label}
+                labelValue={item.labelValue}
                 icon={item.icon}
                 dynamicValue={item.dynamic}
                 dynamicTitle={item.dynamicTitle}
             />
         )
-    })
+    });
 
     return (
-        <div className={'stat-block'}>
-            {renderItem}
+        <div className={"container"}>
+            <div className={"row"}>
+                {renderBlocks}
+            </div>
         </div>
 
     )

@@ -2,6 +2,8 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 interface IProps {
+    currentId: number,
+    itemId: number,
     labelUrl: string,
     items: {
         page: string,
@@ -9,9 +11,8 @@ interface IProps {
     }[]
 }
 
-
-export function MenuDropdown({labelUrl, items}: IProps) {
-    const renderDropdown = items.map((item, index) => {
+export function MenuDropdown({currentId, itemId, labelUrl, items}: IProps) {
+    const renderDropDown = items.map((item, index) => {
         return (
             <li key={index}>
                 <Link to={`/${labelUrl}/${item.url}`}>{item.page}</Link>
@@ -20,8 +21,8 @@ export function MenuDropdown({labelUrl, items}: IProps) {
     })
 
     return (
-        <ul className={"menu-dropdown"}>
-            {renderDropdown}
+        <ul className={currentId === itemId ? 'opened' : 'closed'}>
+            {renderDropDown}
         </ul>
     )
 }

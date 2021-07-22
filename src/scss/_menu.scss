@@ -8,14 +8,17 @@
     }
   }
 
-  // for dropdown
   ul {
     list-style-type: none;
   }
 
- // &-dropdown {
- //   max-height: 0;
- //   transition: max-height 2s ease-out;
- //   overflow: hidden;
- //}
+}
+
+.closed {
+  display: none;
+}
+
+
+opened {
+  display: block;
 }

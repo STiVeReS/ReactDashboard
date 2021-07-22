@@ -1,31 +1,26 @@
-.wrap {
-  display: flex;
-  flex-direction: row;
-  min-height: 100vh;
-
-  &__side {
-    width: 25%;
-  }
-
-
-  &__main {
-    color: #fff;
-    width: 75%;
-    background-color: #5e72e4;
-  }
-}
-
-
+@import '~bootstrap/dist/css/bootstrap.min.css';
 @import "./scss/menu";
+@import "./scss/statBlock";
 
 
-.stat-block {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-  &__item {
-    border-radius: 5px;
-    background-color: #fff;
-  }
+.chart {
+  margin-top: 60px;
 }
+
+.line-chart {
+  background-color: #172B4D;
+}
+
+.bar-chart {
+  background-color: #fff;
+}
+
+
+
+
+.page {
+  padding: 25px;
+  background-color: #5F72E3;
+}
+
+

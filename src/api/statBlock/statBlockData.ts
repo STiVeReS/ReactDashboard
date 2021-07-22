@@ -1,28 +1,28 @@
-export const statBlockData =  [
+export const STAT_BLOCK_DATA =  [
     {
-        title: 'Total Traffic',
-        titleValue: 350897,
+        label: 'Total Traffic',
+        labelValue: 350897,
         icon: '',
         dynamic: 3.48,
         dynamicTitle: 'Since last month'
     },
     {
-        title: 'New users',
-        titleValue: 2356,
+        label: 'New users',
+        labelValue: 2356,
         icon: '',
         dynamic: 3.48,
         dynamicTitle: 'Since last month'
     },
     {
-        title: 'Sales',
-        titleValue: 924,
+        label: 'Sales',
+        labelValue: 924,
         icon: '',
         dynamic: 3.48,
         dynamicTitle: 'Since last month'
     },
     {
-        title: 'Total Perfomance',
-        titleValue: '49.65%',
+        label: 'Total Perfomance',
+        labelValue: '49.65%',
         icon: '',
         dynamic: 3.48,
         dynamicTitle: 'Since last month'

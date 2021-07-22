@@ -1,0 +1,48 @@
+.stat-block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 10px 25px;
+  border-radius: 5px;
+
+  &__item {
+    width: calc(25% - 30px);
+    background-color: #fff;
+    padding: 15px 20px;
+    display: flex;
+  }
+
+  &__text {
+    width: 75%;
+  }
+
+  &__title {
+    color: #A798AA;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 13px;
+  }
+
+  &__bottom {
+    margin-top: 15px;
+    font-isze: 14px;
+  }
+
+  &__dynamic-val {
+    color: #2DCE89;
+    padding-right: 15px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

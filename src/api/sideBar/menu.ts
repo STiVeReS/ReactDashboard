@@ -1,34 +1,43 @@
-import {Dashboard} from "../../pages/dashboards/Dashboard";
-import {Alternative} from "../../pages/dashboards/Alternative";
-import {Pricing} from "../../pages/examples/Pricing";
-import {Login} from "../../pages/examples/Login";
-import {Register} from "../../pages/examples/Register";
-import {Lock} from "../../pages/examples/Lock";
-import {Timeline} from "../../pages/examples/Timeline";
-import {Profile} from "../../pages/examples/Profile";
-import {RtlSupport} from "../../pages/examples/RtlSupport";
-import {Buttons} from "../../pages/components/Buttons";
-import {Cards} from "../../pages/components/Cards";
-import {Grid} from "../../pages/components/Grid";
-import {Notifications} from "../../pages/components/Notifications";
-import {Typography} from "../../pages/components/Typography";
-import {MultiLevel} from "../../pages/components/MultiLevel";
-import {Elements} from "../../pages/forms/Elements";
-import {Components} from "../../pages/forms/Components";
-import {Validation} from "../../pages/forms/Validation";
-import {Google} from "../../pages/maps/Google";
-import {Vector} from "../../pages/maps/Vecot";
-import {Widgets} from "../../pages/widgets/Widgets";
-import {Calendar} from "../../pages/calendar/Calendar";
-import {Tables} from "../../pages/tables/Tables";
-import {Sortable} from "../../pages/tables/Sortable";
-import {Datatables} from "../../pages/tables/Datatables";
-import {Charts} from "../../pages/charts/Charts";
+/*
+* PAGES
+* */
+import {Dashboard} from "../../pages/Dashboards/Dashboard";
+import {Alternative} from "../../pages/Dashboards/Alternative";
+import {Pricing} from "../../pages/Examples/Pricing";
+import {Login} from "../../pages/Examples/Login";
+import {Register} from "../../pages/Examples/Register";
+import {Lock} from "../../pages/Examples/Lock";
+import {Timeline} from "../../pages/Examples/Timeline";
+import {Profile} from "../../pages/Examples/Profile";
+import {RtlSupport} from "../../pages/Examples/RtlSupport";
+import {Buttons} from "../../pages/Components/Buttons";
+import {Cards} from "../../pages/Components/Cards";
+import {Grid} from "../../pages/Components/Grid";
+import {Notifications} from "../../pages/Components/Notifications";
+import {Typography} from "../../pages/Components/Typography";
+import {MultiLevel} from "../../pages/Components/MultiLevel";
+import {Elements} from "../../pages/Forms/Elements";
+import {Components} from "../../pages/Forms/Components";
+import {Validation} from "../../pages/Forms/Validation";
+import {Google} from "../../pages/Maps/Google";
+import {Vector} from "../../pages/Maps/Vecot";
+import {Widgets} from "../../pages/Widgets/Widgets";
+import {Calendar} from "../../pages/Calendar/Calendar";
+import {Tables} from "../../pages/Tables/Tables";
+import {Sortable} from "../../pages/Tables/Sortable";
+import {Datatables} from "../../pages/Tables/Datatables";
+import {Charts} from "../../pages/Charts/Charts";
+import {faCoffee} from "@fortawesome/free-solid-svg-icons";
 
-export const menu = [
+
+
+
+
+export const MENU_LIST = [
     {
         label: 'Dashboard',
         labelUrl: 'dashboard',
+        icon: faCoffee,
         children: [
             {
                 page: 'Dashboard',
@@ -83,7 +92,7 @@ export const menu = [
     },
     {
         label: 'Components',
-        labelUrl: 'components',
+        labelUrl: 'Components',
         children: [
             {
                 page: 'Buttons',
@@ -141,7 +150,7 @@ export const menu = [
     },
     {
         label: 'Tables',
-        labelUrl: 'tables',
+        labelUrl: 'Tables',
         children: [
             {
                 page: 'Tables',
@@ -162,7 +171,7 @@ export const menu = [
     },
     {
         label: 'Maps',
-        labelUrl: 'maps',
+        labelUrl: 'Maps',
         children: [
             {
                 page: 'Google',
@@ -178,13 +187,13 @@ export const menu = [
     },
     {
         label: 'Widgets',
-        labelUrl: 'widgets',
+        labelUrl: 'Widgets',
         component: Widgets,
         children: []
     },
     {
         label: 'Charts',
-        labelUrl: 'charts',
+        labelUrl: 'Charts',
         component: Charts,
         children: []
     },
