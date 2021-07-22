@@ -5,51 +5,26 @@ import {Switch, Route} from 'react-router-dom'
 * api
 * */
 import {menu} from "../../api/side_bar/menu";
-import {Widgets} from "../../pages/widgets/Widgets";
-import {Calendar} from "../../pages/calendar/Calendar";
-import {Charts} from "../../pages/charts/Charts";
-
-/*
-* pages
-* */
-
-const test = [
-    {
-        label: 'Widgets',
-        labelUrl: 'widgets',
-        component: Widgets,
-        children: []
-    },
-    {
-        label: 'Charts',
-        labelUrl: 'charts',
-        component: Charts,
-        children: []
-    },
-    {
-        label: 'Calendar',
-        labelUrl: 'calendar',
-        component: Calendar,
-        children: []
-    }
-]
-
 
 export function MenuRouting() {
     const renderRoutes = menu.map((item, index) => {
-        return item.children.map((sub, subIndex) => {
+        return !item.children.length ?
+            <Route
+                key={index}
+                exact
+                path={`/${item.labelUrl}`}
+                component={item.component}
+            /> : item.children.map((sub, subIndex) => {
             return (
                 <Route
-                    key={item.labelUrl ? index : subIndex}
+                    key={subIndex}
                     exact
-                    path={item.labelUrl ? `/${item.labelUrl}` : `/${item.labelUrl}/${sub.url}`}
-                    component={item.labelUrl ? item.component : sub.component}
+                    path={`/${item.labelUrl}/${sub.url}`}
+                    component={sub.component}
                 />
             )
         })
     });
-
-    console.log(renderRoutes)
 
     return (
         <Switch>
