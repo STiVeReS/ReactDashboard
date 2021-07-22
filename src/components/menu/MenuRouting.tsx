@@ -37,20 +37,23 @@ const test = [
 
 export function MenuRouting() {
     const renderRoutes = menu.map((item, index) => {
-        return (
-            <Route
-                key={index}
-                exact
-                path={`/${item.labelUrl}`}
-                component={item.component}
-            />
-        )
+        return item.children.map((sub, subIndex) => {
+            return (
+                <Route
+                    key={item.labelUrl ? index : subIndex}
+                    exact
+                    path={item.labelUrl ? `/${item.labelUrl}` : `/${item.labelUrl}/${sub.url}`}
+                    component={item.labelUrl ? item.component : sub.component}
+                />
+            )
+        })
     });
-    console.log(renderRoutes);
+
+    console.log(renderRoutes)
 
     return (
-        <>
+        <Switch>
             {renderRoutes}
-        </>
+        </Switch>
     )
 }
