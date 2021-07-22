@@ -1,0 +1,21 @@
+.menu {
+  list-style-type: none;
+
+  &:hover {
+    ul {
+      max-height: 1000px;
+      transition: max-height 2s ease-in;
+    }
+  }
+
+  // for dropdown
+  ul {
+    list-style-type: none;
+  }
+
+ // &-dropdown {
+ //   max-height: 0;
+ //   transition: max-height 2s ease-out;
+ //   overflow: hidden;
+ //}
+}
