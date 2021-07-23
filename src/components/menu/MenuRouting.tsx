@@ -1,15 +1,13 @@
 import React, {lazy} from 'react';
 import {Switch, Route} from 'react-router-dom'
 
-
 /*
 * api
 * */
 import {MENU_LIST} from "../../api/sideBar/menu";
+
+
 export function MenuRouting() {
-
-
-
     const renderRoutes = MENU_LIST.map((item, index) => {
         return !item.children.length ?
             <Route
@@ -17,8 +15,7 @@ export function MenuRouting() {
                 key={index}
                 path={`/${item.labelUrl}`}
                 component={item.component}
-            /> :
-            item.children.map((sub, subIndex) => {
+            /> : item.children.map((sub, subIndex) => {
                 return (
                     <Route
                         exact
