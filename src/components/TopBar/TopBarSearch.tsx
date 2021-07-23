@@ -1,13 +1,21 @@
 import React from 'react';
+import styled from 'styled-components';
 
+const Input = styled.input`
+    background: #123456;
+    background: ${props => props.in ? props.example : ''}
+`;
 
-export function TopBarSearch() {
+interface IProps {
+    bgColor: string
+}
+
+export function TopBarSearch({bgColor}: IProps) {
     return (
-        <input
-            className={"top-bar__search"}
-            type="search"
-            placeholder={"search"}
+        <Input
+            placeholder={'hello'}
+            example={bgColor}
         />
-
     )
 }
+

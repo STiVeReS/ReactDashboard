@@ -1,6 +1,7 @@
 import React, {lazy} from 'react';
 import {Switch, Route} from 'react-router-dom'
 
+
 /*
 * api
 * */
@@ -17,7 +18,7 @@ export function MenuRouting() {
                 path={`/${item.labelUrl}`}
                 component={item.component}
             /> :
-            item.children.map((sub, subIndex: number) => {
+            item.children.map((sub, subIndex) => {
                 return (
                     <Route
                         exact

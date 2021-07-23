@@ -1,7 +1,6 @@
 import React from 'react';
 import {BrowserRouter} from "react-router-dom";
 
-
 /*
 * Routing
 * */
@@ -10,7 +9,7 @@ import {MenuRouting} from "../components/Menu/MenuRouting";
 * Components
 * */
 import {Sidebar} from "../components/Sidebar";
-import {TopBar} from '../components/TopBar/TopBar';
+import { TopBar } from '../components/TopBar/TopBar';
 
 export function Main(props: any) {
     return (

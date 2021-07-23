@@ -3,9 +3,9 @@ import React from 'react';
 * components
 * */
 
-
 import {StatBlock} from "../StatBlock/StatBlock";
-import {TopBarSearch} from '../TopBar/TopBarSearch';
+import { TopBarSearch } from './TopBarSearch';
+
 
 export function TopBar() {
     return (
@@ -13,7 +13,7 @@ export function TopBar() {
             <div className={"container login pb-2"}>
                 <div className={"row"}>
                     <div className={"col-12 col-md-6"}>
-                        <TopBarSearch/>
+                        <TopBarSearch bgColor={'#123456'} />
                     </div>
                     <div className={"col-12 col-md-6"}>
                         Login
