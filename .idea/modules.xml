@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/reactdashboard.iml" filepath="$PROJECT_DIR$/.idea/reactdashboard.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/ReactDashboard.iml" filepath="$PROJECT_DIR$/.idea/ReactDashboard.iml" />
+>>>>>>> 7a52ef7abde36c59fec37b88a2987755474fe8b4
     </modules>
   </component>
 </project>
