@@ -1,7 +1,13 @@
 import React from 'react';
 
+
 export function TopBarSearch() {
     return (
-        <input type="search"/>
+        <input
+            className={"top-bar__search"}
+            type="search"
+            placeholder={"search"}
+        />
+
     )
 }

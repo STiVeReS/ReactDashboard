@@ -1,11 +1,16 @@
 import React from 'react';
 import {BrowserRouter} from "react-router-dom";
 
+
+/*
+* Routing
+* */
+import {MenuRouting} from "../components/Menu/MenuRouting";
 /*
 * Components
 * */
 import {Sidebar} from "../components/Sidebar";
-import {MenuRouting} from "../components/Menu/MenuRouting";
+import {TopBar} from '../components/TopBar/TopBar';
 
 export function Main(props: any) {
     return (
@@ -15,6 +20,7 @@ export function Main(props: any) {
                     <Sidebar/>
                 </div>
                 <div className={" col-9 wrap__main"}>
+                    <TopBar/>
                     <MenuRouting/>
                 </div>
             </div>

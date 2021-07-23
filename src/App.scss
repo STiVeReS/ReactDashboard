@@ -1,26 +1,25 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import "./scss/menu";
 @import "./scss/statBlock";
+@import "./scss/topBar";
 
 
-.chart {
-  margin-top: 60px;
-}
 
 .line-chart {
   background-color: #172B4D;
+  border-radius: 5px;
 }
 
 .bar-chart {
   background-color: #fff;
+  border-radius: 5px;
 }
 
 
 
 
 .page {
-  padding: 25px;
-  background-color: #5F72E3;
+  margin-top: -60px;
 }
 
 

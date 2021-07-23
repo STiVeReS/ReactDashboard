@@ -19,7 +19,7 @@ export function StatBlock() {
     });
 
     return (
-        <div className={"container"}>
+        <div className={"container stat"}>
             <div className={"row"}>
                 {renderBlocks}
             </div>
