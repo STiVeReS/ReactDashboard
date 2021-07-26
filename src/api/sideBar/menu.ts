@@ -1,32 +1,33 @@
 /*
 * PAGES
 * */
-import {PageContent} from "../../pages/PageDashboards/PageContent";
-import {PageAlternative} from "../../pages/PageDashboards/PageAlternative";
-import {PagePricing} from "../../pages/PageExamples/PagePricing";
-import {PageLogin} from "../../pages/PageExamples/PageLogin";
-import {PageRegister} from "../../pages/PageExamples/PageRegister";
-import {PageLock} from "../../pages/PageExamples/PageLock";
-import {PageTimeline} from "../../pages/PageExamples/PageTimeline";
-import {PageProfile} from "../../pages/PageExamples/PageProfile";
-import {PageRtlSupport} from "../../pages/PageExamples/PageRtlSupport";
-import {PageButtons} from "../../pages/PageComponents/PageButtons";
-import {PageCards} from "../../pages/PageComponents/PageCards";
-import {PageGrid} from "../../pages/PageComponents/PageGrid";
-import {PageNotifications} from "../../pages/PageComponents/PageNotifications";
-import {Typography} from "../../pages/PageComponents/Typography";
-import {PageMultiLevel} from "../../pages/PageComponents/PageMultiLevel";
-import {PageElements} from "../../pages/PageForms/PageElements";
-import {PageComponents} from "../../pages/PageForms/PageComponents";
-import {Validation} from "../../pages/PageForms/Validation";
-import {PageGoogle} from "../../pages/PageMaps/PageGoogle";
-import {Vector} from "../../pages/PageMaps/PageVecot";
-import {PageWidgets} from "../../pages/PageWidgets/PageWidgets";
-import {PageCalendar} from "../../pages/PageCalendar/PageCalendar";
-import {PageTables} from "../../pages/PageTables/PageTables";
-import {PageSortable} from "../../pages/PageTables/PageSortable";
-import {PageDatatables} from "../../pages/PageTables/PageDatatables";
-import {PageCharts} from "../../pages/PageCharts/PageCharts";
+
+import {DashboardPage} from "../../pages/Dashboards/DashboardPage";
+import {AlternativePage} from "../../pages/Dashboards/AlternativePage";
+import {PricingPage} from "../../pages/Examples/PricingPage";
+import {LoginPage} from "../../pages/Examples/LoginPage";
+import {RegisterPage} from "../../pages/Examples/RegisterPage";
+import {LockPage} from "../../pages/Examples/LockPage";
+import {TimelinePage} from "../../pages/Examples/TimelinePage";
+import {ProfilePage} from "../../pages/Examples/ProfilePage";
+import {RtlSupportPage} from "../../pages/Examples/RtlSupportPage";
+import {ButtonsPage} from "../../pages/Components/ButtonsPage";
+import {CardsPage} from "../../pages/Components/CardsPage";
+import {GridPage} from "../../pages/Components/GridPage";
+import {NotificationsPage} from "../../pages/Components/NotificationsPage";
+import {TypographyPage} from "../../pages/Components/TypographyPage";
+import {MultiLevelPage} from "../../pages/Components/MultiLevelPage";
+import {ElementsPage} from "../../pages/Forms/ElementsPage";
+import {ComponentsPage} from "../../pages/Forms/ComponentsPage";
+import {ValidationPage} from "../../pages/Forms/ValidationPage";
+import {GooglePage} from "../../pages/Maps/GooglePage";
+import {Vector} from "../../pages/Maps/VecotPage";
+import {WidgetsPage} from "../../pages/Widgets/WidgetsPage";
+import {CalendarPage} from "../../pages/Calendar/CalendarPage";
+import {TablesPage} from "../../pages/Tables/TablesPage";
+import {SortablePage} from "../../pages/Tables/SortablePage";
+import {DatatablesPage} from "../../pages/Tables/DatatablesPage";
+import {ChartsPage} from "../../pages/Charts/ChartsPage";
 /*
 sideBar
 */
@@ -41,59 +42,59 @@ export const MENU_LIST = [
                 page: 'Dashboard',
                 url: 'main',
                 isRaised: true,
-                component: PageContent,
+                component: DashboardPage,
             },
             {
                 page: 'Alternative',
                 url: 'alternative',
                 isRaised: true,
-                component: PageAlternative
+                component: AlternativePage
             }
         ]
     },
     {
-        label: 'PageExamples',
+        label: 'Examples',
         labelUrl: 'examples',
         children: [
             {
                 page: 'Pricing',
                 url: 'pricing',
                 isRaised: true,
-                component: PagePricing
+                component: PricingPage
             },
             {
-                page: 'Login',
+                page: 'Auth',
                 url: 'login',
                 isRaised: true,
-                component: PageLogin
+                component: LoginPage
             },
             {
                 page: 'Register',
                 url: 'register',
                 isRaised: true,
-                component: PageRegister
+                component: RegisterPage
             },
             {
                 page: 'Lock',
                 url: 'lock',
                 isRaised: true,
-                component: PageLock
+                component: LockPage
             },
             {
                 page: 'Timeline',
                 url: 'timeline',
                 isRaised: true,
-                component: PageTimeline
+                component: TimelinePage
             }, {
                 page: 'Profile',
                 url: 'profile',
                 isRaised: true,
-                component: PageProfile
+                component: ProfilePage
             }, {
                 page: 'RTL support',
                 url: 'rtl_support',
                 isRaised: true,
-                component: PageRtlSupport,
+                component: RtlSupportPage,
             },
         ]
     },
@@ -105,61 +106,61 @@ export const MENU_LIST = [
                 page: 'Buttons',
                 url: 'buttons',
                 isRaised: true,
-                component: PageButtons
+                component: ButtonsPage
             },
             {
                 page: 'Cards',
                 url: 'cards',
                 isRaised: true,
-                component: PageCards
+                component: CardsPage
             },
             {
                 page: 'Grid',
                 url: 'grid',
                 isRaised: true,
-                component: PageGrid
+                component: GridPage
             },
             {
                 page: 'Notifications',
                 url: 'notifications',
                 isRaised: true,
-                component: PageNotifications
+                component: NotificationsPage
             },
             {
                 page: 'Icons',
                 url: 'typography',
                 isRaised: true,
-                component: Typography
+                component: TypographyPage
             },
             {
                 page: 'Multi level',
                 url: 'multi level',
                 isRaised: true,
-                component: PageMultiLevel
+                component: MultiLevelPage
             },
         ]
     },
     {
-        label: 'PageForms',
+        label: 'Forms',
         labelUrl: 'forms',
         children: [
             {
                 page: 'Elements',
                 url: 'elements',
                 isRaised: true,
-                component: PageElements
+                component: ElementsPage
             },
             {
                 page: 'Components',
                 url: 'components',
                 isRaised: true,
-                component: PageComponents
+                component: ComponentsPage
             },
             {
                 page: 'Validation',
                 url: 'validation',
                 isRaised: true,
-                component: Validation
+                component: ValidationPage
             },
 
         ]
@@ -172,31 +173,31 @@ export const MENU_LIST = [
                 page: 'PageTables',
                 url: 'tables',
                 isRaised: true,
-                component: PageTables
+                component: TablesPage
             },
             {
                 page: 'Sortable',
                 url: 'sortable',
                 isRaised: true,
-                component: PageSortable
+                component: SortablePage
             },
             {
                 page: 'Datatables',
                 url: 'datatables',
                 isRaised: true,
-                component: PageDatatables
+                component: DatatablesPage
             }
         ]
     },
     {
-        label: 'PageMaps',
-        labelUrl: 'PageMaps',
+        label: 'Maps',
+        labelUrl: 'Maps',
         children: [
             {
                 page: 'Google',
                 url: 'google',
                 isRaised: true,
-                component: PageGoogle
+                component: GooglePage
             },
             {
                 page: 'Vector',
@@ -209,21 +210,21 @@ export const MENU_LIST = [
     {
         label: 'PageWidgets',
         labelUrl: 'widgets',
-        component: PageWidgets,
+        component: WidgetsPage,
         isRaised: true,
         children: []
     },
     {
         label: 'Charts',
         labelUrl: 'charts',
-        component: PageCharts,
+        component: ChartsPage,
         isRaised: true,
         children: []
     },
     {
         label: 'Calendar',
         labelUrl: 'calendar',
-        component: PageCalendar,
+        component: CalendarPage,
         isRaised: true,
         children: []
     }

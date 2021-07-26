@@ -7,16 +7,16 @@ import {BrowserRouter as Router, Switch} from 'react-router-dom';
 
 import './App.scss';
 /*
-* PageComponents
+* Components
 * */
 
-import {MainRoute} from "./components/Route/MainRoute";
+import {AppRouting} from "./AppRouting/AppRouting";
 
 function App() {
     return (
         <Router>
             <Switch>
-                <MainRoute/>
+                <AppRouting/>
             </Switch>
         </Router>
     );
