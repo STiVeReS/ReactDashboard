@@ -1,10 +1,10 @@
 import React from 'react';
 
-import {MenuItem} from "./Menu/MenuItem";
+import {MenuItem} from "../Menu/MenuItem";
 
 export function Sidebar() {
     return (
-        <aside>
+        <aside className={"sidebar"}>
             <MenuItem/>
         </aside>
     )

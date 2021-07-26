@@ -1,5 +1,5 @@
-import React from 'react';
-import {BrowserRouter as Router} from 'react-router-dom';
+import React, {useState} from 'react';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 
 /*
 * Styles
@@ -8,16 +8,12 @@ import './App.scss';
 /*
 * Components
 * */
-import {Main} from "./screens/Main";
-
-
-import {StatBlock} from "./components/StatBlock/StatBlock";
-
+import {Auth} from "./screens/Auth";
 
 function App() {
     return (
         <Router>
-            <Main/>
+            <Auth/>
         </Router>
     );
 }

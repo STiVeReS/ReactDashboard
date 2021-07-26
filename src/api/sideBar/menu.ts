@@ -27,26 +27,23 @@ import {Tables} from "../../pages/Tables/Tables";
 import {Sortable} from "../../pages/Tables/Sortable";
 import {Datatables} from "../../pages/Tables/Datatables";
 import {Charts} from "../../pages/Charts/Charts";
-import {faCoffee} from "@fortawesome/free-solid-svg-icons";
-
-
-
 
 
 export const MENU_LIST = [
     {
         label: 'Dashboard',
         labelUrl: 'dashboard',
-        icon: faCoffee,
         children: [
             {
                 page: 'Dashboard',
                 url: 'dashboard',
+                isRaised: true,
                 component: Dashboard,
             },
             {
                 page: 'Alternative',
                 url: 'alternative',
+                isRaised: true,
                 component: Alternative
             }
         ]
@@ -58,34 +55,41 @@ export const MENU_LIST = [
             {
                 page: 'Pricing',
                 url: 'pricing',
+                isRaised: true,
                 component: Pricing
             },
             {
                 page: 'Login',
                 url: 'login',
+                isRaised: true,
                 component: Login
             },
             {
                 page: 'Register',
                 url: 'register',
+                isRaised: true,
                 component: Register
             },
             {
                 page: 'Lock',
                 url: 'lock',
+                isRaised: true,
                 component: Lock
             },
             {
                 page: 'Timeline',
                 url: 'timeline',
+                isRaised: true,
                 component: Timeline
             }, {
                 page: 'Profile',
                 url: 'profile',
+                isRaised: true,
                 component: Profile
             }, {
                 page: 'RTL support',
                 url: 'rtl_support',
+                isRaised: true,
                 component: RtlSupport,
             },
         ]
@@ -97,31 +101,37 @@ export const MENU_LIST = [
             {
                 page: 'Buttons',
                 url: 'buttons',
+                isRaised: true,
                 component: Buttons
             },
             {
                 page: 'Cards',
                 url: 'cards',
+                isRaised: true,
                 component: Cards
             },
             {
                 page: 'Grid',
                 url: 'grid',
+                isRaised: true,
                 component: Grid
             },
             {
                 page: 'Notifications',
                 url: 'notifications',
+                isRaised: true,
                 component: Notifications
             },
             {
                 page: 'Icons',
                 url: 'Typography',
+                isRaised: true,
                 component: Typography
             },
             {
                 page: 'Multi level',
                 url: 'multi level',
+                isRaised: true,
                 component: MultiLevel
             },
         ]
@@ -133,16 +143,19 @@ export const MENU_LIST = [
             {
                 page: 'Elements',
                 url: 'elements',
+                isRaised: true,
                 component: Elements
             },
             {
                 page: 'Components',
                 url: 'components',
+                isRaised: true,
                 component: Components
             },
             {
                 page: 'Validation',
                 url: 'validation',
+                isRaised: true,
                 component: Validation
             },
 
@@ -155,16 +168,19 @@ export const MENU_LIST = [
             {
                 page: 'Tables',
                 url: 'tables',
+                isRaised: true,
                 component: Tables
             },
             {
                 page: 'Sortable',
                 url: 'sortable',
+                isRaised: true,
                 component: Sortable
             },
             {
                 page: 'Datatables',
                 url: 'datatables',
+                isRaised: true,
                 component: Datatables
             }
         ]
@@ -176,11 +192,13 @@ export const MENU_LIST = [
             {
                 page: 'Google',
                 url: 'google',
+                isRaised: true,
                 component: Google
             },
             {
                 page: 'Vector',
                 url: 'vector',
+                isRaised: true,
                 component: Vector
             }
         ]
@@ -189,18 +207,21 @@ export const MENU_LIST = [
         label: 'Widgets',
         labelUrl: 'Widgets',
         component: Widgets,
+        isRaised: true,
         children: []
     },
     {
         label: 'Charts',
         labelUrl: 'Charts',
         component: Charts,
+        isRaised: true,
         children: []
     },
     {
         label: 'Calendar',
         labelUrl: 'calendar',
         component: Calendar,
+        isRaised: true,
         children: []
     }
 ]

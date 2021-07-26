@@ -1,9 +1,15 @@
 import React from 'react';
+import {Route} from "react-router-dom";
+
+
+import {AuthPage} from "../pages/Auth/AuthPage";
 
 export function Auth() {
     return (
-        <div>
-            AUth page
-        </div>
+        <Route
+            exact
+            path="/"
+            component={AuthPage}
+        />
     )
 }

@@ -2,20 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5f8d43e-b9a6-41da-95d6-544acae169c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ReactDashboard.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/reactdashboard.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/.idea/src.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Auth/AuthPage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/PageNav/PageNav.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/_page.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/_pageNav.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/_sideBar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/_vars.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/charts/barChart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/charts/barChart.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/sideBar/menu.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/sideBar/menu.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Charts/BarChart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Charts/BarChart.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Menu/MenuDrodown.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu/MenuDrodown.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Menu/MenuItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu/MenuItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Menu/MenuRouting.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu/MenuRouting.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Siderbar/Sidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TopBar/TopBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TopBar/TopBar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/TopBar/TopBarSearch.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TopBar/TopBarSearch.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/menu/MenuRouting.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu/MenuRouting.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Dashboards/Alternative.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Dashboards/Alternative.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Dashboards/Dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Dashboards/Dashboard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/Auth.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Auth.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/Main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Main.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,10 +57,23 @@
       <option name="presentableId" value="Default" />
       <updated>1627037452809</updated>
       <workItem from="1627037456878" duration="88000" />
+      <workItem from="1627279593293" duration="253000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

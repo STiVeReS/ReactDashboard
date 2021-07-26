@@ -10,7 +10,7 @@ interface IProps {
 export function Alternative({label, page, child}: IProps) {
     return (
         <div className={"page"}>
-            Alternative
+            {page} {label} {page}
         </div>
     )
 }

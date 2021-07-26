@@ -7,7 +7,7 @@ import {Switch, Route} from 'react-router-dom'
 import {MENU_LIST} from "../../api/sideBar/menu";
 
 
-export function MenuRouting() {
+export function MenuRouting(props : {}) {
     const renderRoutes = MENU_LIST.map((item, index) => {
         return !item.children.length ?
             <Route
@@ -21,7 +21,13 @@ export function MenuRouting() {
                         exact
                         key={subIndex}
                         path={`/${item.labelUrl}/${sub.url}`}
-                        component={sub.component}
+                        component={
+                            () => sub.component({
+                                label: item.label,
+                                page: sub.page,
+                                isRaised: item.isRaised ? item.isRaised : sub.isRaised
+                            })
+                        }
                     />
                 )
             })

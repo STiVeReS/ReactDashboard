@@ -18,3 +18,17 @@ export const BAR_CHART = {
 }
 
 
+export const BAR_CHART_OPTIONS = {
+    plugins: {
+        legend: {
+            display: false,
+        },
+        scales: {
+            y: {
+                beginAtZero: true,
+            }
+        }
+    }
+}
+
+

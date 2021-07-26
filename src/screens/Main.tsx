@@ -5,23 +5,19 @@ import {BrowserRouter} from "react-router-dom";
 * Routing
 * */
 import {MenuRouting} from "../components/Menu/MenuRouting";
+import {Auth} from "./Auth";
 /*
 * Components
 * */
-import {Sidebar} from "../components/Sidebar";
-import { TopBar } from '../components/TopBar/TopBar';
+import {Sidebar} from "../components/Siderbar/Sidebar";
+import {TopBar} from '../components/TopBar/TopBar';
 
-export function Main(props: any) {
+export function Main() {
     return (
-        <div className={'container-fluid'}>
-            <div className={"row"}>
-                <div className={"col-3"}>
-                    <Sidebar/>
-                </div>
-                <div className={" col-9 wrap__main"}>
-                    <TopBar/>
-                    <MenuRouting/>
-                </div>
+        <div className={'wrapper'}>
+            <Sidebar/>
+            <div className={"content"}>
+                <MenuRouting/>
             </div>
         </div>
     )

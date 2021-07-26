@@ -4,23 +4,22 @@ import React from 'react';
 * */
 
 import {StatBlock} from "../StatBlock/StatBlock";
-import { TopBarSearch } from './TopBarSearch';
+import {TopBarSearch} from './TopBarSearch';
+import {PageNav} from "../../pages/PageNav/PageNav";
 
 
 export function TopBar() {
     return (
-        <div className={"top-bar"}>
-            <div className={"container login pb-2"}>
-                <div className={"row"}>
-                    <div className={"col-12 col-md-6"}>
-                        <TopBarSearch bgColor={'#123456'} />
-                    </div>
-                    <div className={"col-12 col-md-6"}>
-                        Login
-                    </div>
+        <div className={"container login pb-2"}>
+            <div className={"row"}>
+                <div className={"col-12 col-md-6"}>
+                    <TopBarSearch/>
+                </div>
+                <div className={"col-12 col-md-6"}>
+                    Login
                 </div>
             </div>
-            <StatBlock/>
         </div>
+
     )
 }

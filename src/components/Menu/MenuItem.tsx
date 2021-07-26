@@ -14,8 +14,17 @@ import {MENU_LIST} from "../../api/sideBar/menu";
 import {MenuDropdown} from "./MenuDrodown";
 
 export function MenuItem() {
-    const [id, setId] = useState(-1);
-    const handleDropdown = (id: number) => setId(() => id);
+    const [menu, setMenu] = useState({
+        id: -1,
+        isOpened: false
+    });
+    const handleDropdown = (id: number) => {
+        setMenu(prevState => ({
+                id: id,
+                isOpened: !prevState.isOpened
+            })
+        )
+    }
 
 
     if (MENU_LIST.length) {
@@ -29,8 +38,8 @@ export function MenuItem() {
                         {dropDown
                             ? <li
                                 onClick={() => handleDropdown(index)}
-                                className={"menu__item"}>{
-                                item.label}
+                                className={"menu__item"}>
+                                {item.label}
                             </li>
                             : <li>
                                 <Link to={`/${item.labelUrl}`}>{item.label}</Link>
@@ -38,7 +47,7 @@ export function MenuItem() {
                         }
                         {dropDown ?
                             <MenuDropdown
-                                currentId={id}
+                                menu={menu}
                                 itemId={index}
                                 labelUrl={item.labelUrl}
                                 items={dropDown}/>
