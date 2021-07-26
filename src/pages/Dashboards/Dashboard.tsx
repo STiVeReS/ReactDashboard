@@ -17,7 +17,6 @@ interface IProps {
 }
 
 export function Dashboard({label, page, isRaised}: IProps) {
-    console.log(isRaised)
     return (
         <>
             <div className={"top-bar"}>

@@ -4,10 +4,8 @@ import {Redirect} from 'react-router';
 /*
 * components
 * */
-
 import {Main} from "../../screens/Main";
 import {BrowserRouter as Router} from "react-router-dom";
-
 
 
 export function AuthPage() {

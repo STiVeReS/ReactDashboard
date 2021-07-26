@@ -1,9 +1,19 @@
+@import "./scss/vars";
 @import '~bootstrap/dist/css/bootstrap.min.css';
+@import "./scss/sideBar";
 @import "./scss/menu";
+@import "./scss/page";
+@import "./scss/pageNav";
 @import "./scss/statBlock";
 @import "./scss/topBar";
 
 
+
+.content {
+  width: 100%;
+  margin-left: auto;
+  max-width: calc(100% - 250px);
+}
 
 .line-chart {
   background-color: #172B4D;

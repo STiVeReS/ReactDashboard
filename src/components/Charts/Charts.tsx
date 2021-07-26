@@ -3,7 +3,6 @@ import React from 'react';
 /*
 * components
 * */
-
 import {LineChart} from "./LineChart";
 import {BarChart} from "./BarChart";
 

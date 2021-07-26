@@ -2,11 +2,7 @@ import React from 'react';
 /*
 * components
 * */
-
-import {StatBlock} from "../StatBlock/StatBlock";
 import {TopBarSearch} from './TopBarSearch';
-import {PageNav} from "../../pages/PageNav/PageNav";
-
 
 export function TopBar() {
     return (

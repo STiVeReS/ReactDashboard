@@ -4,7 +4,7 @@ import {Line} from 'react-chartjs-2';
 /*
 * api
 * */
-import {LINE_CHART} from "../../api/charts/lineChart";
+import {LINE_CHART, LINE_CHART_OPTIONS} from "../../api/charts/lineChart";
 
 export function LineChart() {
     return (
@@ -12,22 +12,8 @@ export function LineChart() {
             <div className={"line-chart"}>
                 <Line
                     data={LINE_CHART}
+                    options={LINE_CHART_OPTIONS}
                     height={170}
-                    options={{
-                        legend: {
-                            display: false
-                        },
-                        scales: {
-                            y: {
-                                beginAtZero: true,
-                            }
-                        },
-                        elements: {
-                            point:{
-                                radius: 0
-                            }
-                        }
-                    }}
                 />
             </div>
         </div>

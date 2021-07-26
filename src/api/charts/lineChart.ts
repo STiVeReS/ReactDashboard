@@ -1,5 +1,5 @@
 export const LINE_CHART = {
-    labels: ['May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec' ],
+    labels: ['May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
     datasets: [{
         fill: false,
         lineTension: 0.5,
@@ -9,4 +9,23 @@ export const LINE_CHART = {
         data: [0, 20, 10, 30, 15, 40, 20, 60],
         label: '',
     }],
-}
+};
+
+
+export const LINE_CHART_OPTIONS = {
+    plugins: {
+        legend: {
+            display: false,
+        },
+        scales: {
+            y: {
+                beginAtZero: true,
+            }
+        }
+    },
+    elements: {
+        point: {
+            radius: 0
+        }
+    }
+};

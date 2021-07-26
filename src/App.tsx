@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import {BrowserRouter as Router, Route} from 'react-router-dom';
+import React from 'react';
+import {BrowserRouter as Router, useLocation} from 'react-router-dom';
 
 /*
 * Styles
