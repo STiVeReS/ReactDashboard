@@ -1,12 +1,13 @@
-@import "./scss/vars";
+
 @import '~bootstrap/dist/css/bootstrap.min.css';
+@import "./scss/vars";
+@import "./scss/login";
 @import "./scss/sideBar";
 @import "./scss/menu";
 @import "./scss/page";
 @import "./scss/pageNav";
 @import "./scss/statBlock";
 @import "./scss/topBar";
-
 
 
 .content {
@@ -26,10 +27,11 @@
 }
 
 
-
-
 .page {
-  margin-top: -60px;
+
+  &.is.raised {
+    margin-top: -60px;
+  }
 }
 
 

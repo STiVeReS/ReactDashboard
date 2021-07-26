@@ -6,7 +6,7 @@ import {TopBarSearch} from './TopBarSearch';
 
 export function TopBar() {
     return (
-        <div className={"container login pb-2"}>
+        <div className={"container top-bar-login pb-2"}>
             <div className={"row"}>
                 <div className={"col-12 col-md-6"}>
                     <TopBarSearch/>
@@ -16,6 +16,5 @@ export function TopBar() {
                 </div>
             </div>
         </div>
-
     )
 }

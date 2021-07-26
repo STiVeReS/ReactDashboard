@@ -1,0 +1,31 @@
+.login {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(175deg, $blue, 35%, $darkBlue 35%) !important;
+  color: #fff;
+
+  form {
+
+    input {
+      width: 100%;
+      margin-top: 20px;
+      outline: none;
+      border: none;
+      padding: 5px 15px;
+    }
+
+    button {
+      display: inline-block;
+      margin-top: 40px;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      background-color: $blue;
+      color: #fff;
+      padding: 10px 20px;
+    }
+  }
+}

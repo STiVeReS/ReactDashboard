@@ -8,7 +8,7 @@ import {MENU_LIST} from "../../api/sideBar/menu";
 
 
 /*
-* Components
+* PageComponents
 * */
 
 import {MenuDropdown} from "./MenuDrodown";

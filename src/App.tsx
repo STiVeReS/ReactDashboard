@@ -1,19 +1,23 @@
 import React from 'react';
-import {BrowserRouter as Router, useLocation} from 'react-router-dom';
+import {BrowserRouter as Router, Switch} from 'react-router-dom';
 
 /*
 * Styles
 * */
+
 import './App.scss';
 /*
-* Components
+* PageComponents
 * */
-import {Auth} from "./screens/Auth";
+
+import {MainRoute} from "./components/Route/MainRoute";
 
 function App() {
     return (
         <Router>
-            <Auth/>
+            <Switch>
+                <MainRoute/>
+            </Switch>
         </Router>
     );
 }

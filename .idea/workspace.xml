@@ -2,18 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5f8d43e-b9a6-41da-95d6-544acae169c6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Route/MainRoute.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/PageDashboards/PageContent.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/PageLogin/PageLogin.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/_login.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/charts/lineChart.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/charts/lineChart.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Charts/Charts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Charts/Charts.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Charts/LineChart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Charts/LineChart.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/sideBar/menu.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/sideBar/menu.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Menu/MenuItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu/MenuItem.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Menu/MenuRouting.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu/MenuRouting.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Siderbar/Sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/Navigation.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/TopBar/TopBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TopBar/TopBar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Auth/AuthPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Auth/AuthPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Dashboards/Dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Dashboards/Dashboard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/Main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Auth/AuthPage.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Calendar/Calendar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/PageCalendar/PageCalendar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Charts/Charts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/PageCharts/PageCharts.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Components/Buttons.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/PageComponents/PageButtons.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Components/Cards.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/PageComponents/PageCards.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Components/Grid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/PageComponents/PageGrid.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Components/Icons.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/PageComponents/PageIcons.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Components/MultiLevel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/PageComponents/PageMultiLevel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Components/Notifications.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/PageComponents/PageNotifications.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Components/Typography.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/PageComponents/Typography.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Dashboards/Alternative.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/PageDashboards/PageAlternative.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Dashboards/Dashboard.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Examples/Lock.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/PageExamples/PageLock.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Examples/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/PageExamples/PageLogin.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Examples/Pricing.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/PageExamples/PagePricing.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Examples/Profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/PageExamples/PageProfile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Examples/Register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/PageExamples/PageRegister.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Examples/RtlSupport.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/PageExamples/PageRtlSupport.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Examples/Timeline.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/PageExamples/PageTimeline.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Forms/Components.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/PageForms/PageComponents.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Forms/Elements.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/PageForms/PageElements.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Forms/Validation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/PageForms/Validation.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Maps/Google.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/PageMaps/PageGoogle.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Maps/Vecot.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/PageMaps/PageVecot.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Tables/Datatables.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/PageTables/PageDatatables.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Tables/Sortable.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/PageTables/PageSortable.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Tables/Tables.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/PageTables/PageTables.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Widgets/Widgets.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/PageWidgets/PageWidgets.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/Auth.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/Main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Content.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/_topBar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_topBar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_vars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_vars.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +54,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1viGMe46srfDSVdUnBUFbasMsaN" />
   <component name="ProjectViewState">
@@ -48,7 +88,7 @@
       <option name="presentableId" value="Default" />
       <updated>1627037452809</updated>
       <workItem from="1627037456878" duration="88000" />
-      <workItem from="1627279593293" duration="6821000" />
+      <workItem from="1627279593293" duration="23257000" />
     </task>
     <servers />
   </component>

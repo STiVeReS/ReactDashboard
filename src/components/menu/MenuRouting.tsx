@@ -1,4 +1,4 @@
-import React, {lazy} from 'react';
+import React from 'react';
 import {Switch, Route} from 'react-router-dom'
 
 /*
@@ -7,7 +7,8 @@ import {Switch, Route} from 'react-router-dom'
 import {MENU_LIST} from "../../api/sideBar/menu";
 
 
-export function MenuRouting(props : {}) {
+
+export function MenuRouting() {
     const renderRoutes = MENU_LIST.map((item, index) => {
         return !item.children.length ?
             <Route
