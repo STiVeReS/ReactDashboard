@@ -1,5 +1,4 @@
 import React from 'react';
-import {STAT_BLOCK_DATA} from "../../api/statBlock/statBlockData";
 
 interface IStatBlock {
     label: string,
@@ -8,7 +7,6 @@ interface IStatBlock {
     dynamicValue: number | string,
     dynamicTitle: string
 }
-
 
 export function SingleItem({label, labelValue, icon, dynamicValue, dynamicTitle}: IStatBlock) {
     return (

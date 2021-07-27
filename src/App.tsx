@@ -9,8 +9,9 @@ import './App.scss';
 /*
 * Components
 * */
-
 import {AppRouting} from "./AppRouting/AppRouting";
+
+console.log(this);
 
 function App() {
     return (

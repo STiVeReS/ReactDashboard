@@ -1,7 +1,6 @@
 /*
 * PAGES
 * */
-
 import {DashboardPage} from "../../pages/Dashboards/DashboardPage";
 import {AlternativePage} from "../../pages/Dashboards/AlternativePage";
 import {PricingPage} from "../../pages/Examples/PricingPage";
@@ -28,10 +27,16 @@ import {TablesPage} from "../../pages/Tables/TablesPage";
 import {SortablePage} from "../../pages/Tables/SortablePage";
 import {DatatablesPage} from "../../pages/Tables/DatatablesPage";
 import {ChartsPage} from "../../pages/Charts/ChartsPage";
+
+// const DashboardPage = lazy(() =>
+//     import("../../pages/Dashboards/DashboardPage")
+//         .then(({DashboardPage}) => ({default: DashboardPage}))
+// );
+
+
 /*
 sideBar
 */
-
 
 export const MENU_LIST = [
     {

@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from "react-router-dom";
 
 interface IProps {
     label: string
@@ -10,7 +9,7 @@ interface IProps {
 export function ValidationPage({label, page, child}: IProps) {
     return (
         <div className={"page"}>
-            <h3>{label}</h3> <span>icon</span> <Link  to="./">{page}</Link><span>{child}</span>
+            <h3>{label}</h3>
         </div>
     )
 }

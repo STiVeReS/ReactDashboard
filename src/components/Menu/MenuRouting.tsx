@@ -1,10 +1,11 @@
-import React, {lazy} from 'react';
+import React from 'react';
 import {Switch, Route} from 'react-router-dom'
 
 /*
 * api
 * */
 import {MENU_LIST} from "../../api/sideBar/menu";
+
 
 
 export function MenuRouting() {
@@ -21,7 +22,13 @@ export function MenuRouting() {
                         exact
                         key={subIndex}
                         path={`/${item.labelUrl}/${sub.url}`}
-                        component={sub.component}
+                        component={
+                            () => sub.component({
+                                label: item.label,
+                                page: sub.page,
+                                isRaised: item.isRaised ? item.isRaised : sub.isRaised
+                            })
+                        }
                     />
                 )
             })
