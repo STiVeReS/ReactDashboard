@@ -1,0 +1,42 @@
+.table-pagination {
+  $self: &;
+  background-color: #fff;
+
+  &__select {
+    margin: 0 5px;
+    padding: 0px 10px;
+  }
+
+
+  table {
+    width: 100%;
+    //border: 1px solid #ccc;
+  }
+
+  tr, th, td, thead, tbody {
+    border-bottom: 1px solid rgba(215, 215, 215, 0.7)
+  }
+
+  th, td {
+    padding: 12px 25px;
+  }
+
+  th {
+    color: #8C9CAD;
+    font-size: 11px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  td {
+    color: #525F7F;
+    font-size: 13px;
+  }
+
+
+  &__sort-btn {
+    cursor: pointer;
+    display: inline-block;
+    float: right
+  }
+}

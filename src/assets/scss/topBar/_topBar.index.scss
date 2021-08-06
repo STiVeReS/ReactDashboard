@@ -1,0 +1,16 @@
+@import "pageNav";
+@import "statBlock";
+@import "userBar";
+@import "popUp";
+
+.top-bar {
+  $self: &;
+  background-color: #5F72E3;
+  padding: 20px 20px;
+}
+
+
+.user-bar {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 50px;
+}

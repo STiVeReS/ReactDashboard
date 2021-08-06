@@ -4,7 +4,7 @@ import {Line} from 'react-chartjs-2';
 /*
 * api
 * */
-import {LINE_CHART, LINE_CHART_OPTIONS} from "../../api/charts/lineChart";
+import {LINE_CHART, LINE_CHART_OPTIONS} from "../../utils/constants/charts/lineChartMock";
 
 export function LineChart() {
     return (

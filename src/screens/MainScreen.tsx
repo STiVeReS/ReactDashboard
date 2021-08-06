@@ -1,8 +1,8 @@
 import React from 'react';
 /*
-* Routing
+* SideNavRouting
 * */
-import {MenuRouting} from "../components/Menu/MenuRouting";
+import {SideNavRouting} from "../routes/SideNavRouting";
 
 /*
 * Components
@@ -11,7 +11,7 @@ import {MenuRouting} from "../components/Menu/MenuRouting";
 export function MainScreen() {
     return (
         <div className={'wrapper'}>
-            <MenuRouting/>
+            <SideNavRouting/>
         </div>
     )
 }

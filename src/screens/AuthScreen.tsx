@@ -4,7 +4,8 @@ import {Route, Redirect} from "react-router-dom";
 /*
 * Components
 * */
-import {AuthPage} from "../pages/Auth/AuthPage";
+import {CreateAcc} from "../view/CreateAcc/CreateAcc";
+import {Auth} from "../view/Auth/Auth";
 
 export function AuthScreen() {
     return (
@@ -13,7 +14,12 @@ export function AuthScreen() {
             <Route
                 exact
                 path="/auth/sign-in"
-                component={AuthPage}
+                component={Auth}
+            />
+            <Route
+                exact
+                path="/create-account"
+                component={CreateAcc}
             />
         </>
     )

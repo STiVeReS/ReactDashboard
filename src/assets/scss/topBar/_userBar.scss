@@ -1,0 +1,48 @@
+.login-bar {
+  $self: &;
+  color: #fff;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  align-items: center;
+
+
+  &__list {
+    padding: 0 10px 0 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0;
+
+    li {
+      position: relative;
+      padding: 5px 15px;
+    }
+  }
+
+  &__icon {
+    cursor: pointer;
+    transition: .25s linear;
+
+    &:hover {
+      opacity: .75;
+    }
+  }
+
+  &__avatar {
+    object-fit: cover;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+  }
+
+
+  &__user-name {
+    padding-left: 10px;
+    font-weight: bold;
+  }
+}
+
+
+

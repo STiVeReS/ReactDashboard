@@ -1,25 +1,22 @@
 import React from 'react';
-import {BrowserRouter as Router, Switch} from 'react-router-dom';
-
-/*
-* Styles
-* */
-
+import {Switch} from 'react-router-dom';
 import './App.scss';
-/*
-* Components
-* */
-import {AppRouting} from "./AppRouting/AppRouting";
+import {AppRouting} from "./routes/AppRouting";
+import {Provider} from "react-redux";
+import {store} from "./store";
+import {ConnectedRouter} from "connected-react-router"
+import {history} from "./store";
 
-console.log(this);
 
 function App() {
     return (
-        <Router>
-            <Switch>
-                <AppRouting/>
-            </Switch>
-        </Router>
+        <Provider store={store}>
+            <ConnectedRouter history={history}>
+                <Switch>
+                    <AppRouting/>
+                </Switch>
+            </ConnectedRouter>
+        </Provider>
     );
 }
 

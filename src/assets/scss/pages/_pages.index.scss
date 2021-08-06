@@ -1,0 +1,10 @@
+@import "loginPage";
+@import "../sharable/tablePagination";
+
+.page {
+  padding: 0 20px;
+
+  &.raised {
+    margin-top: -80px;
+  }
+}

@@ -1,14 +1,14 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+@import "assets/scss/bootstrapCustom";
+@import "assets/scss/vars";
+@import "assets/scss/pages/pages.index";
+@import "assets/scss/sideBar/sideBar";
+@import "assets/scss/topBar/topBar.index";
 
-@import '~bootstrap/dist/css/bootstrap.min.css';
-@import "./scss/vars";
-@import "./scss/login";
-@import "./scss/sideBar";
-@import "./scss/menu";
-@import "./scss/page";
-@import "./scss/pageNav";
-@import "./scss/statBlock";
-@import "./scss/topBar";
-
+body {
+  font-family: Open Sans,sans-serif;
+}
 
 .content {
   width: 100%;
@@ -25,13 +25,3 @@
   background-color: #fff;
   border-radius: 5px;
 }
-
-
-.page {
-
-  &.is.raised {
-    margin-top: -60px;
-  }
-}
-
-

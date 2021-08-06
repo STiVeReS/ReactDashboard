@@ -4,7 +4,7 @@ import {Bar} from 'react-chartjs-2';
 /*
 * api
 * */
-import {BAR_CHART, BAR_CHART_OPTIONS} from "../../api/charts/barChart";
+import {BAR_CHART, BAR_CHART_OPTIONS} from "../../utils/constants/charts/barChartMock";
 
 
 export function BarChart() {

@@ -1,0 +1,55 @@
+$lilac: #5E72E4;
+$green: #2DCE89;
+$darkBlue: #172B4D;
+$violet: #7F60E4;
+$grey: #8898aa;
+
+
+// gradients
+
+.grad-first,
+.grad-second,
+.grad-third,
+.grad-fourth,
+.grad-fifth {
+  position: relative;
+
+  &:after {
+    border-radius: 100%;
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.grad-first {
+  &:after {
+    background: linear-gradient(to right, #4decbb, #1fcb4c);
+  }
+}
+
+.grad-second {
+  &:after {
+    background: linear-gradient(to right, #ac3fa2, #c0c349);
+  }
+}
+
+.grad-third {
+  &:after {
+    background: linear-gradient(to right, #5cf1f4, #2591ca);;
+  }
+}
+
+.grad-fourth {
+  &:after {
+    background: linear-gradient(to right, #fb536a, #426b0f);
+  }
+}
+
+
+.grad-fifth {
+  &:after {
+    background: linear-gradient(to right, #f69182, #6a25d5);
+  }
+}

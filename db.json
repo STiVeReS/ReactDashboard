@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "email": "mail@example.com",
+      "password": "$2a$10$xJD5YWobbbpNIUuU8z9JFe14zMcNe4dkGTXXr/6hmuKycjfB49AoS",
+      "id": 1
+    },
+    {
+      "email": "test@mail.com",
+      "password": "$2a$10$83ArM6O9LGKC5CpUdcfYLedWV3njUQEC6rHGVS1mWmGwFAbvQzOni",
+      "id": 2
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "email": "ma11il@example.com",
+    "name": "John Snow",
+    "img": "",
+    "id": 4
+  }
+}
