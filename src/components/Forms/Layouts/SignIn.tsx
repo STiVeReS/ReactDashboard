@@ -13,18 +13,20 @@ import {IFormTitle} from "../../../utils/interfaces/forms";
 * */
 import {FormHeader} from "./FormHeader";
 
-import {loggedIn, loginSucceed} from "../../../store/auth/sagas/actions";
+import {loggedIn} from "../../../store/auth/sagasOld/actions";
 
 import {SubmitHandler} from "../handlers/submit";
 import {ValidationHandler} from "../handlers/validation";
+import {loginSucceed, setLoginStatus} from "../../../store/auth/sagas/login/loginActions";
 
 export function SignIn({title, link}: IFormTitle) {
 
+    const dispatch = useDispatch();
     const validationHandler = new ValidationHandler();
     const submitHandler = new SubmitHandler(
-        {entered: loggedIn, success: loginSucceed},
-        useDispatch()
+        {status: loggedIn}, useDispatch()
     );
+
 
 
     return (
@@ -38,7 +40,8 @@ export function SignIn({title, link}: IFormTitle) {
                     <Formik
                         initialValues={{email: '', password: ''}}
                         validate={(values) => validationHandler.validation(values)}
-                        onSubmit={(values) => submitHandler.submit(values)}
+                        // onSubmit={(values) => submitHandler.submit(values)}
+                        onSubmit={(values): any => dispatch(loginSucceed(values))}
                     >
                         {({isSubmitting}) => (
                             <Form>

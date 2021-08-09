@@ -1,21 +1,31 @@
 import {handleActions} from "redux-actions";
-import {AuthAction} from "./sagas/actions";
 
-interface IAuthState {
-    isLogged: boolean
+
+export enum LoginStatus {
+    IDLE = "IDLE",
+    LOADING = "LOADING",
+    FAILED = "FAILED",
+    SUCCEED = "SUCCEED"
 }
 
-const authState: IAuthState = {
-    isLogged: false
+export enum SetLoginStatus {
+    STATUS = "STATUS"
 }
 
-export const authReducer = handleActions<IAuthState, any>({
-    [AuthAction.LOGIN_REQUEST]: (state: IAuthState, action: any) => {
-        console.log(action)
+interface ILoginStatus {
+    isLogged: LoginStatus.IDLE |
+        LoginStatus.LOADING |
+        LoginStatus.FAILED |
+        LoginStatus.SUCCEED
+}
+
+const initialState = {isLogged: LoginStatus.IDLE};
+export const loginReducer = handleActions<ILoginStatus>({
+    [SetLoginStatus.STATUS]: (state: ILoginStatus, action: any) => {
+        console.log(action.payload.isLogged)
         return ({
             ...state,
-            ...action.isLogged
+            ...action.payload
         })
     }
-
-}, authState)
+}, initialState);

@@ -1,5 +1,5 @@
 /*
-* pages
+* url
 * */
 import {Dashboard} from "../../../view/Dashboards/Dashboard";
 import {Alternative} from "../../../view/Dashboards/Alternative";

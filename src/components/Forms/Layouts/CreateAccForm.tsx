@@ -12,7 +12,7 @@ import {IDefaultForm, IFormTitle, ISubmitForm} from "../../../utils/interfaces/f
 * components
 * */
 import {FormHeader} from "./FormHeader";
-import {registered} from "../../../store/auth/sagas/actions";
+import {registered} from "../../../store/auth/sagasOld/actions";
 
 
 export function CreateAccForm({title, link}: IFormTitle) {
@@ -42,7 +42,7 @@ export function CreateAccForm({title, link}: IFormTitle) {
     /*
     * submitting
     * */
-    const handleSubmit = (values: IDefaultForm,  {setSubmitting}: FormikHelpers<ISubmitForm>) => {
+    const handleSubmit = (values: IDefaultForm, {setSubmitting}: FormikHelpers<ISubmitForm>) => {
         dispatch(registered(values));
         // setSubmitting(true);
     }
@@ -57,7 +57,8 @@ export function CreateAccForm({title, link}: IFormTitle) {
                     <Formik
                         initialValues={{email: '', password: ''}}
                         validate={handleValidation}
-                        onSubmit={handleSubmit}
+                        // onSubmit={handleSubmit}
+                        onSubmit={() => console.log("clicked")}
                     >
                         {({isSubmitting}) => (
                             <Form>

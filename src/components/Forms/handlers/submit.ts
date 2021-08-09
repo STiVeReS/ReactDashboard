@@ -1,12 +1,10 @@
 /*
 * submitting
 * */
-import {ISubmitForm} from "../../../utils/interfaces/forms";
+import {IDefaultForm, ISubmitForm} from "../../../utils/interfaces/forms";
 
 interface ISubmitActions {
-    success?: any,
-    failed?: any,
-    entered?: any
+    status: (values: IDefaultForm) => {}
 }
 
 export class SubmitHandler {
@@ -17,6 +15,6 @@ export class SubmitHandler {
     }
 
     submit(values: ISubmitForm) {
-        this.dispatch(this.actions.entered(values));
+        this.dispatch(this.actions.status(values));
     }
 }

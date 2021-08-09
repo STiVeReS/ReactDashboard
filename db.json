@@ -11,11 +11,34 @@
       "id": 2
     }
   ],
-  "posts": [
+  "featured_posts": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "label": "Total Traffic",
+      "value": 350897,
+      "subValue": 3.48,
+      "subLabel": "Since last month",
+      "icon": "grad-third"
+    },
+    {
+      "label": "New userst",
+      "value": 2356,
+      "subValue": 3.48,
+      "subLabel": "Since last month",
+      "icon": "grad-second"
+    },
+    {
+      "label": "Sales",
+      "value": 924,
+      "subValue": 3.48,
+      "subLabel": "Since last month",
+      "icon": "grad-first"
+    },
+    {
+      "label": "Total Performance",
+      "value": "49.65%",
+      "subValue": 3.48,
+      "subLabel": "Since last month",
+      "icon": "grad-third"
     }
   ],
   "comments": [
@@ -28,7 +51,7 @@
   "profile": {
     "email": "ma11il@example.com",
     "name": "John Snow",
-    "img": "",
+    "img": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.rcsdk8.org%2Fpost%2Fimage-dimensions&psig=AOvVaw1XyGoMhtB5ZDArBAILEkzC&ust=1628593656390000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKjep6jmo_ICFQAAAAAdAAAAABAD",
     "id": 4
   }
 }

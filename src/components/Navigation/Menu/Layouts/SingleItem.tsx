@@ -11,6 +11,11 @@ import {SIDE_MENU} from "../../../../utils/constants/nav/sideMenu";
 * */
 import {MenuDropdown} from "./Drodown";
 
+/*
+* history handler
+* */
+import {AddUserHistory} from "../../../../utils/helpers/userHistory/userHistory";
+
 export function SingleItem() {
     const [menu, setMenu] = useState({
         id: -1,
@@ -24,6 +29,7 @@ export function SingleItem() {
         )
     }
 
+
     if (SIDE_MENU.length) {
         const renderMenu = SIDE_MENU.map((item, index) => {
                 const dropDown = item.children && item.children.length
@@ -34,9 +40,13 @@ export function SingleItem() {
                         key={index}>
                         {dropDown
                             ? <li
-                                onClick={() => handleDropdown(index)}
+                                onClick={() => {
+                                    handleDropdown(index);
+                                    // AddUserHistory(item.url);
+                                }}
                                 className={"menu__item"}>
                                 {item.label}
+                                <i className="bi bi-chevron-down"></i>
                             </li>
                             : <li>
                                 <Link to={`/${item.url}`}>{item.label}</Link>

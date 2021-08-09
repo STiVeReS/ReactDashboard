@@ -6,28 +6,22 @@ const axiosInstance: AxiosInstance = axios.create({
 });
 
 
-const get = async (url: string, payload = {}) => {
-    try {
-        return await axiosInstance({
-            method: "get",
-            url,
-            data: payload
-        })
-    } catch (err) {
-        console.log(err)
-    }
+const get = async (url: string, payload = {}): Promise<any> => {
+    const response = await axiosInstance({
+        method: "get",
+        url,
+        data: payload
+    });
+    return response;
 }
 
-const post = async (url: string, payload = {}) => {
-    try {
-        return await axiosInstance({
-            method: "post",
-            url,
-            data: payload
-        })
-    } catch (err) {
-        console.log(err)
-    }
+const post = async (url: string, payload = {}): Promise<any> => {
+    const response = await axiosInstance({
+        method: "post",
+        url,
+        data: payload
+    });
+    return response;
 }
 
 

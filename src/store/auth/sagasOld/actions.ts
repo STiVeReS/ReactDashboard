@@ -15,6 +15,7 @@ export enum AuthAction {
 export const loginSucceed = createAction(
     AuthAction.LOGIN_SUCCEED,
     (payload: boolean) => {
+        console.log('reason ?')
         return payload;
     }
 );

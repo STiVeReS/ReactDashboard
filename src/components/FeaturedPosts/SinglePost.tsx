@@ -8,7 +8,7 @@ export interface ITopBarBlock {
     icon: string;
 }
 
-export function SingleBlock({label, value, subValue, subLabel, icon}: ITopBarBlock) {
+export function SinglePost({label, value, subValue, subLabel, icon}: ITopBarBlock) {
     return (
         <div className={"col-12 col-md-6 col-lg-3"}>
             <div className={'stat-block'}>
