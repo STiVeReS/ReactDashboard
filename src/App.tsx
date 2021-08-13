@@ -11,6 +11,7 @@ import {history} from "./store";
 function App() {
     return (
         <Provider store={store}>
+            {/*toastify*/}
             <ConnectedRouter history={history}>
                 <Switch>
                     <AppRouting/>

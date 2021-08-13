@@ -9,7 +9,7 @@ import {BarChart} from "./BarChart";
 
 export function ChartsContainer() {
     return (
-        <div className={"container chart"}>
+        <div className={"container-fluid chart"}>
             <div className={"row"}>
                 <LineChart/>
                 <BarChart/>

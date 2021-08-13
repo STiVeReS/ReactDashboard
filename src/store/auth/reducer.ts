@@ -1,31 +1,33 @@
 import {handleActions} from "redux-actions";
+import {RequestStatus, RequestTypes} from "../shared/requests/requestStatus";
+import {LoginActions} from "./sagas/login/loginActions";
+import {RegisterActions} from "./sagas/register/registerActions";
+
+export interface IAuthState {
+    loginRequestStatus?: RequestTypes
+    registerRequestStatus?: RequestTypes
+};
+
+const initialState = {
+    loginRequestStatus: RequestStatus.IDLE,
+    registerRequestStatus: RequestStatus.IDLE
+};
 
 
-export enum LoginStatus {
-    IDLE = "IDLE",
-    LOADING = "LOADING",
-    FAILED = "FAILED",
-    SUCCEED = "SUCCEED"
-}
-
-export enum SetLoginStatus {
-    STATUS = "STATUS"
-}
-
-interface ILoginStatus {
-    isLogged: LoginStatus.IDLE |
-        LoginStatus.LOADING |
-        LoginStatus.FAILED |
-        LoginStatus.SUCCEED
-}
-
-const initialState = {isLogged: LoginStatus.IDLE};
-export const loginReducer = handleActions<ILoginStatus>({
-    [SetLoginStatus.STATUS]: (state: ILoginStatus, action: any) => {
-        console.log(action.payload.isLogged)
+export const authReducer = handleActions<IAuthState>({
+    [LoginActions.LOGIN_REQUEST]: (state: IAuthState, {payload}: any) => {
+        console.log("login action", payload, state);
         return ({
             ...state,
-            ...action.payload
+            loginRequestStatus: payload.loginRequestStatus
+        })
+    },
+
+    [RegisterActions.REGISTER_REQUEST]: (state: IAuthState, {payload}: any) => {
+        console.log('register action', payload);
+        return ({
+            ...state,
+            registerRequestStatus: payload.registerRequestStatus
         })
     }
 }, initialState);

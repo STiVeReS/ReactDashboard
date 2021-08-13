@@ -1,7 +1,7 @@
 .page-nav {
   $self: &;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  //padding-top: 30px;
+  //padding-bottom: 30px;
   display: flex;
   align-content: center;
   align-items: center;
@@ -74,7 +74,13 @@
 .page-btn {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  margin-bottom: 30px;
+
+
+  @include media-breakpoint-up(md) {
+    justify-content: flex-end;
+    margin-bottom: 0;
+  }
 
   &__item {
     border: none;

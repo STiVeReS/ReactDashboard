@@ -12,8 +12,8 @@ export interface ITopBarNav {
 export function Breadcrumbs({label, url, subLabel, subUrl}: ITopBarNav) {
     const HOME_LINK = '/dashboard/main';
     return (
-        <div className={"container"}>
-            <div className={"row"}>
+        <div className={"container-fluid"}>
+            <div className={"row py-4"}>
                 <div className={"col-12 col-md-6"}>
                     <div className={"page-nav"}>
                         <h5 className={"page-nav__label"}>{label}</h5>

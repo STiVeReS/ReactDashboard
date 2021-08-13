@@ -4,11 +4,6 @@
       "email": "mail@example.com",
       "password": "$2a$10$xJD5YWobbbpNIUuU8z9JFe14zMcNe4dkGTXXr/6hmuKycjfB49AoS",
       "id": 1
-    },
-    {
-      "email": "test@mail.com",
-      "password": "$2a$10$83ArM6O9LGKC5CpUdcfYLedWV3njUQEC6rHGVS1mWmGwFAbvQzOni",
-      "id": 2
     }
   ],
   "featured_posts": [
@@ -17,28 +12,28 @@
       "value": 350897,
       "subValue": 3.48,
       "subLabel": "Since last month",
-      "icon": "grad-third"
+      "icon": "bi bi-hand-thumbs-up-fill"
     },
     {
       "label": "New userst",
       "value": 2356,
       "subValue": 3.48,
       "subLabel": "Since last month",
-      "icon": "grad-second"
+      "icon": "bi bi-pie-chart-fill"
     },
     {
       "label": "Sales",
       "value": 924,
       "subValue": 3.48,
       "subLabel": "Since last month",
-      "icon": "grad-first"
+      "icon": "bi bi-cash-coin"
     },
     {
       "label": "Total Performance",
       "value": "49.65%",
       "subValue": 3.48,
       "subLabel": "Since last month",
-      "icon": "grad-third"
+      "icon": "bi bi-bar-chart-fill"
     }
   ],
   "comments": [

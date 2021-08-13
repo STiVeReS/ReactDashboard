@@ -4,5 +4,4 @@ export interface IPageProps {
     subLabel?: string,
     subUrl?: string,
     isRaised: boolean,
-    nav?: string
 }

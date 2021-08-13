@@ -6,7 +6,7 @@ import api from "../../../api";
 function* fetchUsersHandler(): Generator<any> {
     try {
         const users = yield call(api.users.fetchUsers());
-        // console.log(users)
+        console.log(users)
         yield put({type: UserAction.FETCH_SUCCEED});
 
 

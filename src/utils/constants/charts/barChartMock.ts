@@ -27,8 +27,10 @@ export const BAR_CHART_OPTIONS = {
             y: {
                 beginAtZero: true,
             }
-        }
+        },
+        options: {maintainAspectRatio: false}
     }
+
 }
 
 

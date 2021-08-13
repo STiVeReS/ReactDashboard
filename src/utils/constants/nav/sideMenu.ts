@@ -1,32 +1,32 @@
 /*
 * url
 * */
-import {Dashboard} from "../../../view/Dashboards/Dashboard";
-import {Alternative} from "../../../view/Dashboards/Alternative";
-import {Pricing} from "../../../view/Examples/Pricing";
-import {Login} from "../../../view/Examples/Login";
-import {Register} from "../../../view/Examples/Register";
-import {Lock} from "../../../view/Examples/Lock";
-import {Timeline} from "../../../view/Examples/Timeline";
-import {Profile} from "../../../view/Examples/Profile";
-import {RtlSupport} from "../../../view/Examples/RtlSupport";
-import {Buttons} from "../../../view/Components/Buttons";
-import {Cards} from "../../../view/Components/Cards";
-import {Grid} from "../../../view/Components/Grid";
-import {Notifications} from "../../../view/Components/Notifications";
-import {Typography} from "../../../view/Components/Typography";
-import {MultiLevel} from "../../../view/Components/MultiLevel";
-import {Elements} from "../../../view/Forms/Elements";
-import {Component} from "../../../view/Forms/Component";
-import {Validation} from "../../../view/Forms/Validation";
-import {Google} from "../../../view/Maps/Google";
-import {Vector} from "../../../view/Maps/Vecor";
-import {Widgets} from "../../../view/Widgets/Widgets";
-import {Calendar} from "../../../view/Calendar/Calendar";
-import {Tables} from "../../../view/Tables/Tables";
-import {Sortable} from "../../../view/Tables/Sortable";
-import {DataTables} from "../../../view/Tables/DataTables";
-import {Charts} from "../../../view/Charts/Charts";
+import {Dashboard} from "../../../pages/Dashboards/Dashboard";
+import {Alternative} from "../../../pages/Dashboards/Alternative";
+import {Pricing} from "../../../pages/Examples/Pricing";
+import {Login} from "../../../pages/Examples/Login";
+import {Register} from "../../../pages/Examples/Register";
+import {Lock} from "../../../pages/Examples/Lock";
+import {Timeline} from "../../../pages/Examples/Timeline";
+import {Profile} from "../../../pages/Examples/Profile";
+import {RtlSupport} from "../../../pages/Examples/RtlSupport";
+import {Buttons} from "../../../pages/Components/Buttons";
+import {Cards} from "../../../pages/Components/Cards";
+import {Grid} from "../../../pages/Components/Grid";
+import {Notifications} from "../../../pages/Components/Notifications";
+import {Typography} from "../../../pages/Components/Typography";
+import {MultiLevel} from "../../../pages/Components/MultiLevel";
+import {Elements} from "../../../pages/Forms/Elements";
+import {Component} from "../../../pages/Forms/Component";
+import {Validation} from "../../../pages/Forms/Validation";
+import {Google} from "../../../pages/Maps/Google";
+import {Vector} from "../../../pages/Maps/Vecor";
+import {Widgets} from "../../../pages/Widgets/Widgets";
+import {Calendar} from "../../../pages/Calendar/Calendar";
+import {Tables} from "../../../pages/Tables/Tables";
+import {Sortable} from "../../../pages/Tables/Sortable";
+import {DataTables} from "../../../pages/Tables/DataTables";
+import {Charts} from "../../../pages/Charts/Charts";
 
 /*
 nav
@@ -40,8 +40,7 @@ import {IPageProps} from "../../interfaces/pages";
 interface IMenu {
     label: string;
     url: string;
-    component?: ({label, url, isRaised, nav}: IPageProps) => JSX.Element | any;
-    nav?: string;
+    component?: ({label, url, isRaised}: IPageProps) => JSX.Element | any;
     isRaised?: boolean;
     icon?: string;
 }
@@ -59,56 +58,50 @@ export const SIDE_MENU: IMenuExtended[] = [
     {
         label: 'Dashboard',
         url: 'dashboard',
-        icon: 'grad-first',
+        icon: 'bi bi-house-door',
         children: [
             {
                 label: 'Main',
                 url: 'main',
                 isRaised: true,
                 component: Dashboard,
-                nav: 'sidebar',
             },
             {
                 label: 'Alternative',
                 url: 'alternative',
                 isRaised: true,
                 component: Alternative,
-                nav: 'sidebar',
             }
         ]
     },
     {
         label: 'Examples',
         url: 'examples',
-        icon: 'grad-second',
+        icon: 'bi bi-files',
         children: [
             {
                 label: 'Pricing',
                 url: 'pricing',
                 isRaised: true,
                 component: Pricing,
-                nav: 'sidebar',
             },
             {
                 label: 'Auth',
                 url: 'login',
                 isRaised: true,
                 component: Login,
-                nav: 'sidebar',
             },
             {
                 label: 'Register',
                 url: 'register',
                 isRaised: true,
                 component: Register,
-                nav: 'sidebar',
             },
             {
                 label: 'Lock',
                 url: 'lock',
                 isRaised: true,
                 component: Lock,
-                nav: 'sidebar',
             },
             {
                 label: 'Timeline',
@@ -121,91 +114,80 @@ export const SIDE_MENU: IMenuExtended[] = [
                 url: 'profile',
                 isRaised: true,
                 component: Profile,
-                nav: 'sidebar',
             },
             {
                 label: 'RTL support',
                 url: 'rtl_support',
                 isRaised: true,
                 component: RtlSupport,
-                nav: 'sidebar',
             },
         ]
     },
     {
         label: 'Components',
         url: 'components',
-        icon: 'grad-second',
+        icon: 'bi bi-toggles',
         children: [
             {
                 label: 'Buttons',
                 url: 'buttons',
                 isRaised: true,
                 component: Buttons,
-                nav: 'sidebar',
             },
             {
                 label: 'Cards',
                 url: 'cards',
                 isRaised: true,
                 component: Cards,
-                nav: 'sidebar',
             },
             {
                 label: 'Grid',
                 url: 'grid',
                 isRaised: true,
                 component: Grid,
-                nav: 'sidebar',
             },
             {
                 label: 'Notifications',
                 url: 'notifications',
                 isRaised: true,
                 component: Notifications,
-                nav: 'sidebar',
             },
             {
                 label: 'Icons',
                 url: 'typography',
                 isRaised: true,
                 component: Typography,
-                nav: 'sidebar',
             },
             {
                 label: 'Multi level',
                 url: 'multi level',
                 isRaised: true,
                 component: MultiLevel,
-                nav: 'sidebar',
             },
         ]
     },
     {
         label: 'Forms',
         url: 'forms',
-        icon: 'grad-third',
+        icon: 'bi bi-file-text-fill',
         children: [
             {
                 label: 'Elements',
                 url: 'elements',
                 isRaised: true,
                 component: Elements,
-                nav: 'sidebar',
             },
             {
                 label: 'Components',
                 url: 'components',
                 isRaised: true,
                 component: Component,
-                nav: 'sidebar',
             },
             {
                 label: 'Validation',
                 url: 'validation',
                 isRaised: true,
                 component: Validation,
-                nav: 'sidebar',
             },
 
         ]
@@ -213,76 +195,68 @@ export const SIDE_MENU: IMenuExtended[] = [
     {
         label: 'Tables',
         url: 'tables',
-        icon: 'grad-first',
+        icon: 'bi bi-justify-left',
         children: [
             {
                 label: 'Tables',
                 url: 'tables',
                 isRaised: true,
                 component: Tables,
-                nav: 'sidebar',
             },
             {
                 label: 'Sortable',
                 url: 'sortable',
                 isRaised: true,
                 component: Sortable,
-                nav: 'sidebar',
             },
             {
                 label: 'Datatables',
                 url: 'datatables',
                 isRaised: true,
                 component: DataTables,
-                nav: 'sidebar',
             }
         ]
     },
     {
         label: 'Maps',
         url: 'Maps',
-        icon: 'grad-fourth',
+        icon: 'bi bi-map-fill',
         children: [
             {
                 label: 'Google',
                 url: 'google',
                 isRaised: true,
                 component: Google,
-                nav: 'sidebar',
             },
             {
                 label: 'Vector',
                 url: 'vector',
                 isRaised: true,
                 component: Vector,
-                nav: 'sidebar',
             }
         ]
     },
     {
-        label: 'PageWidgets',
+        label: 'Page Widgets',
         url: 'widgets',
-        icon: 'grad-fifth',
+        icon: 'bi bi-inboxes-fill',
         component: Widgets,
-        nav: 'sidebar',
         isRaised: true,
         children: []
     },
     {
         label: 'Charts',
         url: 'charts',
-        icon: 'grad-third',
+        icon: 'bi bi-pie-chart-fill',
         component: Charts,
-        nav: 'sidebar',
         isRaised: true,
         children: []
     },
     {
         label: 'Calendar',
         url: 'calendar',
-        icon: 'grad-first',
+        icon: 'bi bi-calendar2-week',
         component: Calendar,
-        nav: 'sidebar',
         isRaised: true,
         children: []
     }

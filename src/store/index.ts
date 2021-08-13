@@ -29,6 +29,8 @@ export const store = createStore(
     ))
 );
 
+export const {dispatch} = store;
+
 for (let saga in sagas) {
     // @ts-ignore
     sagaMiddleware.run(sagas[saga]);

@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Link} from 'react-router-dom'
+import {Link, useRouteMatch} from 'react-router-dom'
 
 /*
 * api
@@ -11,12 +11,9 @@ import {SIDE_MENU} from "../../../../utils/constants/nav/sideMenu";
 * */
 import {MenuDropdown} from "./Drodown";
 
-/*
-* history handler
-* */
-import {AddUserHistory} from "../../../../utils/helpers/userHistory/userHistory";
 
 export function SingleItem() {
+    const {path} = useRouteMatch();
     const [menu, setMenu] = useState({
         id: -1,
         isOpened: false
@@ -35,39 +32,34 @@ export function SingleItem() {
                 const dropDown = item.children && item.children.length
                     ? item.children
                     : '';
-                return (
-                    <ul className={`menu ${item.icon}`}
-                        key={index}>
-                        {dropDown
-                            ? <li
-                                onClick={() => {
-                                    handleDropdown(index);
-                                    // AddUserHistory(item.url);
-                                }}
-                                className={"menu__item"}>
-                                {item.label}
-                                <i className="bi bi-chevron-down"></i>
-                            </li>
-                            : <li>
-                                <Link to={`/${item.url}`}>{item.label}</Link>
-                            </li>
-                        }
-                        {dropDown ?
-                            <MenuDropdown
-                                menu={menu}
-                                itemId={index}
-                                url={item.url}
-                                items={dropDown}/>
-                            : ''
-                        }
-                    </ul>
-                )
+                return dropDown ?
+                    <li onClick={() => handleDropdown(index)}
+                        className={"menu__item with-dropdown"}
+                        key={index}
+                    >
+                        <i className={`menu__item-icon ${item.icon}`}></i>
+                        {item.label}
+                        <i className="menu__item-icon--dropdown bi bi-chevron-down"></i>
+
+                        <MenuDropdown
+                            menu={menu}
+                            itemId={index}
+                            url={`${path}/${item.url}`}
+                            items={dropDown}
+                        />
+                    </li>
+                    : <li className={"menu__item"} key={index}>
+                        <i className={`menu__item-icon ${item.icon}`}></i>
+                        <Link to={`${path}/${item.url}`}>{item.label}</Link>
+                    </li>
             }
         );
 
         return (
             <nav>
-                {renderMenu}
+                <ul className={"menu"}>
+                    {renderMenu}
+                </ul>
             </nav>
         )
     }

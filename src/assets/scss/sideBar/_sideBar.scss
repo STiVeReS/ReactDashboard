@@ -7,25 +7,27 @@
 }
 
 .menu {
+  $self: &;
+  padding-left: 20px;
   list-style-type: none;
 
-  &.grad-first,
-  &.grad-second,
-  &.grad-third,
-  &.grad-fourth,
-  &.grad-fifth {
-    &:after {
-      left: 5px;
-      top: 5px;
-      width: 15px;
-      height: 15px;
-    }
-  }
+  &__item {
+    font-size: 14px;
+    font-weight: lighter;
+    color: rgba(0, 0, 0, 0.6);
+    padding-top: 10px;
+    padding-bottom: 10px;
 
-  li {
+
+    &.with-dropdown {
+      cursor: pointer;
+    }
+
     a {
       text-decoration: none;
-      color: #000;
+      color: inherit;
+      font-weight: inherit;
+      font-size: 13px;
 
       &:hover {
         text-decoration: underline;
@@ -33,29 +35,113 @@
     }
   }
 
-  &:hover {
-    ul {
-      max-height: 1000px;
-      transition: max-height 2s ease-in;
+  &__item-icon {
+    padding-right: 15px;
+
+    &--dropdown {
+      padding-left: 10px;
+      font-size: 12px;
     }
   }
 
-  ul {
-    list-style-type: none;
 
-    li {
-      a {
-        text-decoration: none;
+  // sub menu
+  &__sub {
+    list-style-type: none;
+    padding: 10px 0 10px 30px;
+
+    &-item {
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+
+    &.closed {
+      display: none;
+    }
+
+    &.opened {
+      display: block;
+    }
+  }
+}
+
+// menu icons color
+.menu {
+  $self: &;
+
+  &__item {
+    &:nth-child(1) {
+      #{$self}__item-icon {
+        color: #5E72E4;
+      }
+    }
+
+    &:nth-child(2) {
+      #{$self}__item-icon {
+        color: #FB7459;
+      }
+    }
+
+    &:nth-child(3) {
+      #{$self}__item-icon {
+        color: #11CDEF;
+      }
+    }
+
+    &:nth-child(4) {
+      #{$self}__item-icon {
+        color: #F3A4B5;
+      }
+    }
+
+    &:nth-child(5) {
+      #{$self}__item-icon {
+        color: #535664;
+      }
+    }
+
+    &:nth-child(6) {
+      #{$self}__item-icon {
+        color: #5E72E4;
+      }
+    }
+
+    &:nth-child(7) {
+      #{$self}__item-icon {
+        color: #2DCE89;
+      }
+    }
+
+    &:nth-child(8) {
+      #{$self}__item-icon {
+        color: #11CDEF;
+      }
+    }
+
+    &:nth-child(9) {
+      #{$self}__item-icon {
+        color: #F5365C;
       }
     }
   }
 }
 
-.closed {
-  display: none;
+// drop down animation
+
+.my-node-enter {
+  opacity: 0;
 }
 
+.my-node-enter-active {
+  opacity: 1;
+  transition: all 1s ease;
+}
 
-.opened {
-  display: block;
+.my-node-exit {
+  opacity: 1;
+}
+
+.my-node-exit-active {
+  opacity: 0;
+  transition:  all 1s ease;
 }

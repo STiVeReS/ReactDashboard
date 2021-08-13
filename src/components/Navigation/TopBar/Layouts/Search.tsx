@@ -11,6 +11,7 @@ const Input = styled.input`
   border-radius: 25px;
   background: ${props => props.theme.background};
   color: ${props => props.theme.color};
+  margin-top: 30px;
 
   ::placeholder,
   ::-webkit-input-placeholder {
@@ -19,6 +20,10 @@ const Input = styled.input`
   
   :-ms-input-placeholder {
     color: ${props => props.theme.color};
+  }
+  
+  @media (min-width: 768px) {
+    margin-top: 0;
   }
 `;
 

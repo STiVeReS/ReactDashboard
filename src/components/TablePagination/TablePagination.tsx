@@ -19,6 +19,7 @@ interface IBasePagination {
 
 export function TablePagination(props: IBasePagination) {
 
+
     /*
     * props destructuring
     * */
@@ -136,6 +137,22 @@ export function TablePagination(props: IBasePagination) {
     });
 
     /*
+    * prev / next buttons
+    * */
+    const prevNextHandler = () => {
+        const maxPagesNum = Math.ceil(tableRow.length / items)
+        const btns = [];
+        let i = 2;
+        while (maxPagesNum >= i) {
+            btns.push(i);
+            i++;
+        }
+        return btns.map((item, index) => (
+            <span onClick={nextPage} key={index}>{item - 1}</span>
+        ))
+    }
+
+    /*
     * render page
     * */
     return (
@@ -163,6 +180,9 @@ export function TablePagination(props: IBasePagination) {
             </table>
             <button onClick={prevPage}>prev{page}</button>
             <button onClick={nextPage}>next{page}</button>
+            <div>
+                {prevNextHandler()}
+            </div>
         </div>
     )
 }

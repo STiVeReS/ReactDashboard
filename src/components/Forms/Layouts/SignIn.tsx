@@ -1,32 +1,59 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-import {ErrorMessage, Field, Form, Formik} from "formik";
-import {useDispatch} from "react-redux";
+import {ErrorMessage, Field, Form, Formik, FormikHelpers} from "formik";
+import {useDispatch, useSelector} from "react-redux";
 
 /*
 * interface
 * */
-import {IFormTitle} from "../../../utils/interfaces/forms";
+import {IDefaultForm, IFormTitle} from "../../../utils/interfaces/forms";
+
+/*
+* actions
+* */
+import {loginStatus} from "../../../store/auth/sagas/login/loginActions";
 
 /*
 * components
 * */
 import {FormHeader} from "./FormHeader";
-
-import {loggedIn} from "../../../store/auth/sagasOld/actions";
-
-import {SubmitHandler} from "../handlers/submit";
-import {ValidationHandler} from "../handlers/validation";
-import {loginSucceed, setLoginStatus} from "../../../store/auth/sagas/login/loginActions";
+import {authStatusSelector} from "../../../store/auth/selectors";
+import {FormErrorMsg} from "./FormErrorMsg";
+// import {AuthStatus} from "../../../store/auth/reducer";
+import {RequestStatus} from "../../../store/shared/requests/requestStatus";
 
 export function SignIn({title, link}: IFormTitle) {
-
     const dispatch = useDispatch();
-    const validationHandler = new ValidationHandler();
-    const submitHandler = new SubmitHandler(
-        {status: loggedIn}, useDispatch()
-    );
+    const {loginRequestStatus} = useSelector(authStatusSelector);
 
+    /*
+    * fields validation handler
+    * */
+    const validationHandler = (values: IDefaultForm) => {
+        const errors: IDefaultForm = {};
+        if (!values.email) {
+            errors.email = "Email is required"
+        } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
+            errors.email = "Invalid email"
+        }
+        if (!values.password) {
+            errors.password = "Password is required"
+        } else if (values.password.length < 4) {
+            errors.password = "Password is too short"
+        }
+        return errors;
+    }
+
+    /*
+    * submit handler
+    * */
+    const submitHandler = (
+        values: IDefaultForm,
+        // {setSubmitting}: FormikHelpers<any>
+    ): void => {
+        console.log(loginRequestStatus)
+        dispatch(loginStatus(values));
+    }
 
 
     return (
@@ -35,13 +62,11 @@ export function SignIn({title, link}: IFormTitle) {
                         text={"Use these awesome forms to auth or create new account in your project for free"}/>
             <div className={"col-12"}>
                 <div className={"log-form py-5 px-2 px-lg-5"}>
-
                     <small>{title} <Link to={`${link}`}>Create Account</Link></small>
                     <Formik
                         initialValues={{email: '', password: ''}}
-                        validate={(values) => validationHandler.validation(values)}
-                        // onSubmit={(values) => submitHandler.submit(values)}
-                        onSubmit={(values): any => dispatch(loginSucceed(values))}
+                        validate={validationHandler}
+                        onSubmit={submitHandler}
                     >
                         {({isSubmitting}) => (
                             <Form>
@@ -63,6 +88,10 @@ export function SignIn({title, link}: IFormTitle) {
                             </Form>
                         )}
                     </Formik>
+                    {loginRequestStatus === RequestStatus.FAILED
+                        ? <FormErrorMsg msg={"Please check email and password fields and try again"}/>
+                        : null
+                    }
                 </div>
             </div>
         </>

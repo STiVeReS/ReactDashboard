@@ -1,11 +1,11 @@
 import users from "./users";
 import auth from "./auth"
-import featuredPosts from "./featuredPosts";
+import topBarPosts from "./topBarPosts";
 
 const api = {
     users,
     auth,
-    featuredPosts,
+    topBarPosts
 }
 
 export default api;

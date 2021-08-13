@@ -13,7 +13,7 @@ export function LineChart() {
                 <Line
                     data={LINE_CHART}
                     options={LINE_CHART_OPTIONS}
-                    height={170}
+                    height={150}
                 />
             </div>
         </div>

@@ -1,35 +1,27 @@
 import React from 'react';
-import {Route, Redirect} from "react-router-dom";
-
-/*
-* helpers
-* */
-import {getFromLocalStorage} from "../utils/helpers/localstore/localstore";
-import {HOME_URL, AUTH_URL} from "../utils/constants/url/url";
+import {Route, Switch, useRouteMatch} from "react-router-dom";
 
 /*
 * Components
 * */
-import {CreateAcc} from "../view/CreateAcc/CreateAcc";
-import {Auth} from "../view/Auth/Auth";
+import {CreateAcc} from "../pages/CreateAcc/CreateAcc";
+import {Auth} from "../pages/Auth/Auth";
+
 
 export function AuthScreen() {
+    const {path} = useRouteMatch();
     return (
-        <>
-            {Object.keys(getFromLocalStorage('userToken')).length
-                ? <Redirect from="/" to={"/dashboard/main"}/>
-                : <Redirect from="/" to="/auth/sign-in"/>
-            }
+        <Switch>
             <Route
                 exact
-                path="/auth/sign-in"
+                path={`${path}/sign-in`}
                 component={Auth}
             />
             <Route
                 exact
-                path="/create-account"
+                path={`${path}/create-account`}
                 component={CreateAcc}
             />
-        </>
+        </Switch>
     )
 }

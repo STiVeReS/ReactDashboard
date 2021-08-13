@@ -1,23 +1,17 @@
 import {createAction} from "redux-actions";
-import {LoginStatus} from "../../reducer";
-import {SetLoginStatus} from "../../reducer";
-import {IDefaultForm} from "../../../../utils/interfaces/forms";
+import {IAuthState} from "../../reducer";
 
+export enum LoginActions {
+    LOGIN_REQUEST = "LOGIN_REQUEST",
+    LOGIN_STATUS = "LOGIN_STATUS",
+}
 
-export const loginSucceed = createAction(
-    LoginStatus.SUCCEED,
-    (payload: IDefaultForm) => payload
+export const loginRequest = createAction(
+    LoginActions.LOGIN_REQUEST,
+    (payload : IAuthState) => payload
 )
 
-
-// export const loginFailed = createAction(
-//     LoginStatus.FAILED,
-//     (payload: boolean) => payload
-// )
-
-export const setLoginStatus = createAction(
-    SetLoginStatus.STATUS,
-    (payload: {}) => payload
-)
-
-
+export const loginStatus = createAction(
+    LoginActions.LOGIN_STATUS,
+    (payload: any) => payload
+);

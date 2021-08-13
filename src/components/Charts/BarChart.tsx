@@ -14,7 +14,7 @@ export function BarChart() {
                 <Bar
                     data={BAR_CHART}
                     options={BAR_CHART_OPTIONS}
-                    height={350}
+                    height={320}
                 />
             </div>
         </div>

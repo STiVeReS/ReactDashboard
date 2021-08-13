@@ -1,17 +1,17 @@
 import React from 'react';
-/*
-* SideNavRouting
-* */
 import {SideNavRouting} from "../routes/SideNavRouting";
+import {SideMenuContainer} from "../components/Navigation/Menu/SideMenuContainer";
 
-/*
-* Components
-* */
 
 export function MainScreen() {
     return (
-        <div className={'wrapper'}>
-            <SideNavRouting/>
-        </div>
+        <>
+            <div className={'wrapper'}>
+                <SideMenuContainer/>
+                <main className={"content"}>
+                    <SideNavRouting/>
+                </main>
+            </div>
+        </>
     )
 }

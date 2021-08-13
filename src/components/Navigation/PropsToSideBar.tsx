@@ -7,10 +7,10 @@ export interface ISideBar {
 }
 
 export function PropsToSideBar({navKey}: ISideBar): JSX.Element {
-    const getNav: { [key: string]: () => JSX.Element } = NAV_COMPONENTS;
+    // const getNav: { [key: string]: () => JSX.Element } = NAV_COMPONENTS;
     return (
         <>
-            {React.createElement(getNav[navKey])}
+            <div>111</div>
         </>
     )
 }
